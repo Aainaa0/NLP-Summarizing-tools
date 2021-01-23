@@ -1,5 +1,7 @@
-<h3> !pip install flask <h3>
-<h3> !pip install spacy <h3>
+<h3> !pip install flask </h3>
+<h3> !pip install spacy </h3>
+<h3> !python -m spacy download en_core_web_sm </h3>
+<h3> !python -m spacy download zh_core_web_sm </h3>
 
 
 # NLP-Summarizing-tools
