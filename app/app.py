@@ -17,6 +17,7 @@ app = Flask(__name__)
 def test():
     summary = ""
     text = ""
+    sentencesLength = "0"
     if request.method == "POST":
         text=request.form['originalText']
         text=re.sub('\[+(.*)+\]','', text)
@@ -48,12 +49,14 @@ def test():
                     else:
                         sentence_scores[sent] += word_frequencies[word.text.lower()]
         select_length = int(len(sentence_tokens)*0.3)
+        sentencesLength = select_length
+        print(sentencesLength)
         summary = nlargest(select_length, sentence_scores, key = sentence_scores.get)
         final_summary = [word.text for word in summary]
         summary = ' '.join(final_summary)
         
         print("Summary: \n"+summary)
-        return render_template("homepage.html", summarizeText=summary, initialText=text)
+        return render_template("homepage.html", summarizeText=summary, initialText=text, sentences = sentencesLength)
     
     else:
         return render_template("homepage.html")
