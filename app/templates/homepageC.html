@@ -117,7 +117,7 @@ a.fa:hover {
             <form method="POST" action="/chinese" style="width: 100%" id="myForm">
                   <strong class="d-inline-block mb-2 text-primary">原文</strong>
                   <div class="form-group" style="width: 100%; ">
-                <textarea id="initialText" class="form-control" rows="14" style="overflow-y: scroll; resize: none;">{{ initialText }}</textarea>
+                <textarea id="initialText" class="form-control" rows="14" style="overflow-y: scroll; resize: none;" name="originalText" required>{{ initialText }}</textarea>
               </div>
                   <div class="ml-auto" style="height: 50px"> 
                 <!--									<input type="submit" class="btn btn-primary btn-lg" href="#生成" role="button" value="生成">-->

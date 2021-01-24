@@ -3,6 +3,7 @@ from flask import render_template
 from flask import request
 import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
+from spacy.lang.zh.stop_words import STOP_WORDS as zh_STOP_WORDS
 from heapq import nlargest
 import re
 
@@ -72,10 +73,10 @@ def home_zh():
     text = ""
     sentencesLength = "0"
     if request.method == "POST":
-        text=request.form['originalText']
-        text=re.sub('\[+(.*)+\]','', text)
-        stopwords = list( STOP_WORDS )
-        nlp = spacy.load('en_core_web_sm')
+        #=request.form['originalText']
+        #text=re.sub('\[+(.*)+\]','', text)
+        stopwords = list( zh_STOP_WORDS )
+        nlp = spacy.load('zh_core_web_sm')
         doc = nlp(text)
         #tokens = [token.text for token in doc]
         from string import punctuation
@@ -109,8 +110,8 @@ def home_zh():
         summary = ' '.join(final_summary)
         
         print("Summary: \n"+summary)
-        return render_template("homepageC.html", summarizeText=summary, initialText=text, sentences = sentencesLength)
-    
+        print("Hello world")
+        return render_template("homepageC.html", summarizeText=summary, initialText=text, sentences = sentencesLength) 
     else:
         return render_template("homepageC.html")   
     
