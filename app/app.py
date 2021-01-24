@@ -13,7 +13,7 @@ app = Flask(__name__)
 #def index():
 #    return render_template("homepage.html")
 
-@app.route("/english", methods=['POST', 'GET'])
+@app.route("/", methods=['POST', 'GET'])
 def home_en():
     summary = ""
     text = ""

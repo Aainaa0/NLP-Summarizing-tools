@@ -99,9 +99,9 @@ a.fa:hover {
         <li class="nav-item"> <a class="nav-link" href="#team">Team</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
         <li> <span class="form-group">
-          <select class="form-control" onchange = "location = this.value;">
-            <option selected>English</option>
-            <option value="chinese" >Mandarin</option>
+          <select class="form-control" onchange = "if (this.value) window.location.href=this.value">
+            <option value="/" selected>English</option>
+            <option value="/chinese" >Mandarin</option>
           </select>
           </span> </li>
       </ul>
