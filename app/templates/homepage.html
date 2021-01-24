@@ -99,9 +99,9 @@ a.fa:hover {
         <li class="nav-item"> <a class="nav-link" href="#team">Team</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
         <li> <span class="form-group">
-          <select class="form-control" id="sel1">
-            <option>English</option>
-            <option>Mandarin</option>
+          <select class="form-control" onchange = "location = this.value;">
+            <option selected>English</option>
+            <option value="chinese" >Mandarin</option>
           </select>
           </span> </li>
       </ul>
@@ -114,7 +114,7 @@ a.fa:hover {
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
-            <form method="POST" action="/" style="width: 100%" id="myForm">
+            <form method="POST" action="/english" style="width: 100%" id="myForm">
               <strong class="d-inline-block mb-2 text-primary">Original Text</strong>
               <div class="form-group" style="width: 100%; ">
                 <textarea id="initialText" class="form-control" rows="14" style="overflow-y: scroll; resize: none;" name="originalText" required>{{ initialText }}</textarea>
@@ -176,7 +176,7 @@ a.fa:hover {
     <div class="row featurette">
       <div class="col-md-6 " style="margin-top: 4rem; margin-bottom: 1rem;">
         <h1 class="featurette-heading">What can you use <span class="headline" >Summariz</span> for? </h1>
-        <small>These are many ways this tools can be used in real-world application! </small> </div>
+        <small>There are many ways this tools can be used in real-world application! </small> </div>
       <div class="col-md-6">
         <div class="lead"><span><i class="fa fa-check-circle fa-3x" aria-hidden="true" style="vertical-align: middle; color: rgb(074, 198, 148);"></i> Summarizing result of scientific studies</span> </div>
         <div class="lead"><span><i class="fa fa-check-circle fa-3x" aria-hidden="true" style="vertical-align: middle; color: rgb(074, 198, 148);"></i> Creating study notes</span> </div>
@@ -219,7 +219,7 @@ a.fa:hover {
   <div class="container" >
     <div class="row">
       <div class="col-lg-12 mb-4 mt-2 text-center">
-        <h1><span class="headline" >Meet our team members</span></h1>
+        <h1><span class="headline" >Meet the team members</span></h1>
       </div>
     </div>
   </div>
