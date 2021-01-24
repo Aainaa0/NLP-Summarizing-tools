@@ -73,12 +73,11 @@ def home_zh():
     text = ""
     sentencesLength = "0"
     if request.method == "POST":
-        #=request.form['originalText']
+        text = request.form['originalText']
         #text=re.sub('\[+(.*)+\]','', text)
         stopwords = list( zh_STOP_WORDS )
         nlp = spacy.load('zh_core_web_sm')
         doc = nlp(text)
-        #tokens = [token.text for token in doc]
         from string import punctuation
         punctuation = punctuation + '\n'
         print(punctuation)
@@ -110,8 +109,8 @@ def home_zh():
         summary = ' '.join(final_summary)
         
         print("Summary: \n"+summary)
-        print("Hello world")
-        return render_template("homepageC.html", summarizeText=summary, initialText=text, sentences = sentencesLength) 
+        return render_template("homepageC.html", summarizeText=summary, initialText=text, sentences = sentencesLength)
+
     else:
         return render_template("homepageC.html")   
     
