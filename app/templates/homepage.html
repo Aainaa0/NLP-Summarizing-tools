@@ -141,7 +141,8 @@ a.fa:hover {
               <textarea id="summarizeText" class="form-control" rows="14" readonly="yes" style="resize: none;">{{ summarizeText }}</textarea>
             </div>
             <div class="row" style="width: 100%; height: 50px">
-              <div class="col-md-6"> Result: {{ sentences }} sentences </div>
+              <div class="col-md-9">
+				  Result: {{ sentences }} </div>
               <div class="ml-auto"> <a href="#" class="fa fa-copy fa-2x"></a> </div>
               <script>
 				document.querySelector(".fa-copy").onclick = function(){

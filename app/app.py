@@ -57,7 +57,9 @@ def home_en():
         summary = ' '.join(final_summary)
         
         print("Summary: \n"+summary)
-        return render_template("homepage.html", summarizeText=summary, initialText=text, sentences = sentencesLength)
+        
+        result = str(sentencesLength)+" sentence(s) (from "+str(len(text))+" to "+str(len(summary))+" word(s))"
+        return render_template("homepage.html", summarizeText=summary, initialText=text, sentences = result)
     
     else:
         return render_template("homepage.html")
