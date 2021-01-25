@@ -21,7 +21,7 @@ def home_en():
     sentencesLength = "0"
     if request.method == "POST":
         text=request.form['originalText']
-        text=re.sub('\[+(.*)+\]','', text)
+        text=re.sub('(\[.*?\])','', text)
         stopwords = list( STOP_WORDS )
         nlp = spacy.load('en_core_web_sm')
         doc = nlp(text)
