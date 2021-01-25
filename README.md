@@ -14,7 +14,7 @@ Example of output: <code>> (env) (base) C:\Users\user\NLP-Summarizing-tools\app\
 Example of output: <code>> (env) (base) C:\Users\user\NLP-Summarizing-tools\app></code>
 6. Run <br><code>> flask run</code>
 <pre><code> Output:
-> (env) (base) C:\xampp\htdocs\NLP-Summarizing-tools\app>flask run
+> (env) (base) C:\Users\user\NLP-Summarizing-tools\app>flask run
 > * Environment: production
 >  WARNING: This is a development server. Do not use it in a production deployment.
 >  Use a production WSGI server instead.
