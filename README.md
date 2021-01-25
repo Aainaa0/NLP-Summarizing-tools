@@ -5,13 +5,13 @@
 
 
 # NLP-Summarizing-tools
-1. Download n unzip kat mana2
-2. Bukak python console
-3. Run <br><code>> cd C:\xampp\htdocs\NLP-Summarizing-tools\app\env\Scripts</code>
+1. Download/clone the zip file and unzipped files.
+2. Open python console
+3. Run <br><code>> cd C:\Users\user\NLP-Summarizing-tools\app\env\Scripts</code>
 4. Run <br><code>> activate</code><br>
-contoh output: <code>> (env) (base) C:\xampp\htdocs\NLP-Summarizing-tools\app\env\Scripts></code>
+Example of output: <code>> (env) (base) C:\Users\user\NLP-Summarizing-tools\app\env\Scripts></code>
 5. Run <br><code>> cd ../..</code><br>
-contoh output: <code>> (env) (base) C:\xampp\htdocs\NLP-Summarizing-tools\app></code>
+Example of output: <code>> (env) (base) C:\Users\user\NLP-Summarizing-tools\app></code>
 6. Run <br><code>> flask run</code>
 <pre><code> Output:
 > (env) (base) C:\xampp\htdocs\NLP-Summarizing-tools\app>flask run
