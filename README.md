@@ -25,3 +25,6 @@ Use a production WSGI server instead.
 127.0.0.1 - - [24/Jan/2021 07:06:55] "←[33mGET /flag-icon.min.css HTTP/1.1←[0m" 404 -
 127.0.0.1 - - [24/Jan/2021 07:06:55] "←[33mGET /scroll-to-top.css HTTP/1.1←[0m" 404 -</code></pre>
 7. Go to http://127.0.0.1:5000/ 
+
+<img src="https://github.com/supcicak0/NLP-Summarizing-tools/blob/master/Preview/Picture1.png">
+<img src="https://github.com/supcicak0/NLP-Summarizing-tools/blob/master/Preview/Picture2.png">
